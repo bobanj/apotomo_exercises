@@ -7,9 +7,6 @@ gem 'rails', '3.0.5'
 
 gem 'sqlite3'
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
 # Deploy with Capistrano
 # gem 'capistrano'
 
@@ -29,8 +26,11 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem 'unicorn', :group => [:development, :test]
 gem "capybara", :group => [:development, :test]
 gem "devise"
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+gem "compass"
+gem "apotomo"
